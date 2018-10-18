@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Segments
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="level">
+      <ion-segment-button value="primary">
+        Primary
+      </ion-segment-button>
+      <ion-segment-button value="secondary">
+        Secondary
+      </ion-segment-button>
+      <ion-segment-button value="tertiary">
+        Tertiary
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="level">
+    <ion-list *ngSwitchCase="'primary'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Bagontaas</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Hagkol</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Mailag</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Poblacion</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'secondary'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Malaybalay</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Valencia</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Maramag</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Quezon</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'tertiary'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Bukidnon</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Davao</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment.png">
+        </ion-thumbnail>
+        <h2>Sultan Kudarat</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/avatar-segment2.png">
+        </ion-thumbnail>
+        <h2>Saranggani</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

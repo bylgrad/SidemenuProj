@@ -8,6 +8,9 @@ import { ListPage } from '../pages/list/list';
 import { ModalListPage } from '../pages/modal-list/modal-list';
 import { NavigationPage } from '../pages/navigation/navigation';
 import { SearchbarPage } from '../pages/searchbar/searchbar';
+import { SegmentPage } from '../pages/segment/segment';
+import { SelectPage } from '../pages/select/select';
+import { SlidePage } from '../pages/slide/slide';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +31,11 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Modal List', component: ModalListPage },
       { title: 'Navigation', component: NavigationPage },
-      { title: 'Search bar', component: SearchbarPage }
+      { title: 'Search bar', component: SearchbarPage },
+      { title: 'Segment', component: SegmentPage },
+      { title: 'Select', component: SelectPage },
+      { title: 'Slide', component: SlidePage }
+
     ];
 
   }

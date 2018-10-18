@@ -11,6 +11,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ModalListPage, ModalContentPage } from '../pages/modal-list/modal-list';
 import { NavigationPage, NavigationDetailsPage } from '../pages/navigation/navigation';
 import { SearchbarPage } from '../pages/searchbar/searchbar';
+import { SegmentPage } from '../pages/segment/segment';
+import { SelectPage } from '../pages/select/select';
+import { SlidePage } from '../pages/slide/slide';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { SearchbarPage } from '../pages/searchbar/searchbar';
     ModalContentPage,
     NavigationPage,
     NavigationDetailsPage,
-    SearchbarPage
+    SearchbarPage,
+    SegmentPage,
+    SelectPage,
+    SlidePage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,10 @@ import { SearchbarPage } from '../pages/searchbar/searchbar';
     ModalContentPage,
     NavigationPage,
     NavigationDetailsPage,
-    SearchbarPage
+    SearchbarPage,
+    SegmentPage,
+    SelectPage,
+    SlidePage
   ],
   providers: [
     StatusBar,
