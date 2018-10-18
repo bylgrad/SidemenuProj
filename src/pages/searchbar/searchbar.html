@@ -1,12 +1,21 @@
 <ion-header>
-  <ion-navbar>
+  <!-- <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
       Searchbar
     </ion-title>
-  </ion-navbar>
+  </ion-navbar> -->
+
+<ion-toolbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+</ion-toolbar>
+
+
 </ion-header>
 
 <ion-content>
